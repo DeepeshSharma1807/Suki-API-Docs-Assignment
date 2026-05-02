@@ -26,9 +26,13 @@ Every request to this API needs a Bearer token in the `Authorization` header. Th
 ```http
 Authorization: Bearer <your_token_here>
 Content-Type: application/json
+X-Partner-Token: <the_secret_token_given_to_your_whole_Company>
 ```
 
-> **Note:** Keep your token private. Do not paste it directly in your code or push it to GitHub.
+> **Note:** 
+> - Keep your token private. Do not paste it directly in your code or push it to GitHub.
+> - Although `X-Partner-Token` is not shown in the header list , it is preferred to add it in the header as it was mentioned required in some notes .
+
 
 ---
 
@@ -52,7 +56,7 @@ The plural form `/sessions/` is recommended going forward.
 
 ## Request Body
 
-Send a JSON object in the body of your request. Here is an example:
+Send a JSON object in the body of your request. See the **Parameters** table below for a detailed breakdown of each field. Here is an example:
 
 ```json
 {

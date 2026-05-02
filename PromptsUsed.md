@@ -19,10 +19,15 @@
 **Prompts:**
 > 1. *"What standard sections should be in REST API docs?"*
 > 2. *"Take this JSON request body and write a JavaScript fetch example for it."*
+> 3. *"Tell me the way how should explain Endpoint in my documentation for the developers"*
 
 **What I kept and what I rejected:**
-- **Kept:** I used the suggested layout (Auth -> Endpoints -> Responses) because it felt organized and standard. I also kept the basic structure of the `fetch` request it wrote.
-- **Rejected:** It suggested a massive "Error Codes" table at the very bottom of the page. I rejected that and moved the errors right under the responses where they are actually useful. 
+- **Kept:** 
+  - **i.)** I used the suggested layout (Auth -> Endpoints -> Responses) because it felt organized and standard. I also kept the basic structure of the `fetch` request it wrote.
+  - **ii.)** I simply used the endpoints given without using the base URL as AI suggested, because a base URL for those endpoints was not provided in the given information.
+- **Rejected:** 
+  - **i.)** It suggested a massive "Error Codes" table at the very bottom of the page. I rejected that and moved the errors right under the responses where they are actually useful.
+  - **ii.)** It guessed a base URL (`https://api.suki.ai`) for the endpoint. I rejected this because that URL wasn't mentioned anywhere in the instructions given.
 - **Modified:** In the JS example, the AI hardcoded a fake token (`Bearer 12345`). I changed this to `<your_token_here>` and added a security warning in the doc, because hardcoding tokens is a bad practice I learned about.
 
 ## Tool 3: Grammarly
@@ -35,5 +40,3 @@
 - **Rejected:** It kept trying to make my sentences sound really formal and academic. I ignored those suggestions because I want the API doc to be conversational and easy for developers to scan.
 
 ---
-**Summary:** 
-Using AI was a great way to quickly learn what webhooks were and get a standard template going. This saved me time so I could focus on making the guide easy to read and highly focused on the Suki API.
