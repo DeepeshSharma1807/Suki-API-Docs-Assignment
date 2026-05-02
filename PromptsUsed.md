@@ -19,7 +19,7 @@
 **Prompts:**
 > 1. *"What standard sections should be in REST API docs?"*
 > 2. *"Take this JSON request body and write a JavaScript fetch example for it."*
-> 3. *"Tell me the way how should explain Endpoint in my documentation for the developers"*
+> 3. *"Give me an explain for Endpoint that I can use in my technical documentation with end users being developers"*
 
 **What I kept and what I rejected:**
 - **Kept:** 
